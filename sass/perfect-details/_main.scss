@@ -1,0 +1,319 @@
+.perfect-details-page{
+	.section-first{
+		position: relative;
+		.text-overlay{
+			position: absolute;
+			top: 40%;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+			text-shadow: 0 0 10px rgba(0,0,0,.2);
+			.hero{
+				margin-bottom: 25px;
+			}
+			img{
+				display: inline-block;
+				vertical-align: middle;
+				box-shadow: 0 0 10px rgba(0,0,0,.4);
+				margin-right: 15px;
+				& + div{
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+	.section-second{
+		& > div{
+			overflow: hidden;
+			width: 100%;
+			position: relative;
+			.schedule{
+				position: relative;
+				left: 65px;
+				margin-bottom: 0;
+				height: 135px;
+				li{
+					width: 262px;
+					height: 100%;
+					background: #32d0a1;
+					border-right:1px solid #1daf84;
+					color: #078660;
+					float: left;
+					padding: 30px 10px;
+  					text-align: right;
+
+  					h6{
+  						padding-bottom: 10px;
+  					}
+
+  					&:first-child{
+  						border-left: 1px solid #1daf84;
+  					}
+
+					&.active{
+						color: #009e6f;
+						background: #35e3af;
+					}
+				}
+			}
+			.carousel-control{
+				background: #15a47a;
+				top: 0;
+				width: 65px;
+				height: 100%;
+				text-shadow: none;
+				@include opacity(100);
+				.fa{
+					font-size: 60px;
+					color: #078660;
+					line-height: 135px;
+				}
+			}
+		}
+
+	}
+	.container-timeline{
+		@include make-container(1440px);
+		overflow: visible;
+		.row{
+			@include make-responsive-row(1440px, 1190px);
+			position: relative;
+			img{
+				position: absolute;
+				z-index: 2;
+			}
+		}
+
+	}
+	.section-third{
+		@include make-container(1440px);
+		position: relative;
+		& > img{
+			position: absolute;
+			top:0;
+			left:0;
+		}
+		& > .row{
+			@include make-responsive-row(1440px, 1190px);
+			& > *{
+				width: percentage(780 / 1190);
+				position: relative;
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+
+				.price{
+					top: 10px;
+
+				}
+
+				.col-xs-6{
+					padding-top: 20px;
+					width: 50%;
+					&:first-child{
+						padding-left: 0;
+						padding-right: 10px;
+
+						& + .col-xs-6{
+							padding-right: 0;
+							padding-left: 10px;
+						}
+					}
+				}
+			}
+			article{
+				height: 0;
+			}
+			.article-top{
+				padding-bottom: percentage(210 / 1190);
+				h1{
+					padding-top: percentage(60 / 780);
+					padding-bottom: percentage(30 / 780);
+					margin-bottom: 0;
+				}
+				p{
+					margin-bottom: 0;
+				}
+			}
+			.article-bottom{
+				padding-bottom: percentage(180 / 1190);
+				.content{
+					padding-top: percentage(45 / 780);
+					padding-left: percentage(30 / 780);
+					padding-right: percentage(30 / 780);
+				}
+			}
+			img{
+				padding-bottom: 0;
+			}
+		}
+	}
+	.section-fourth{
+		overflow: hidden;
+		@include make-container(1440px);
+		.row{
+			@include make-row(1440px,0px,0px);
+			position: relative;
+			z-index: 1;
+			& > div{
+				width: percentage(800 / 1440);
+				float: none;
+				display: table-cell;
+				position: relative;
+				.price{
+					bottom: 10px;
+				}
+			}
+			& > article{
+				width: percentage(640 / 1440);
+				float: none;
+				display: table-cell;
+				vertical-align: middle;
+				background: #2e2e2e;
+				padding-left: percentage(50 / 640);
+				padding-right: percentage(50 / 640);
+				h1{
+					padding-bottom: percentage(30 / 640);
+					margin-bottom: 0;
+				}
+				p{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.section-fifth{
+		@include make-container(1440px);
+		background: #e4e4e4;
+		.row{
+			@include make-responsive-row(1440px, 995px);
+			position: relative;
+			z-index: 1;
+			padding-top: percentage(50 / 1440);
+			padding-bottom: percentage(50 / 1440);
+			& > div{
+				width: percentage(610 / 995);
+				float: none;
+				display: table-cell;
+				position: relative;
+				.price{
+					bottom: 10px;
+				}
+			}
+			& > article{
+				width: percentage(385 / 995);
+				background: #fff;
+				float: none;
+				display: table-cell;
+				vertical-align: middle;
+				padding-left: percentage(30 / 995);
+				padding-right: percentage(30 / 995);
+
+				h1{
+					padding-top: percentage(125 / 385);
+					padding-bottom: percentage(60 / 385);
+					margin-bottom: 0;
+					text-align: right;
+				}
+				p{
+					margin-bottom: 0;
+				}
+
+			}
+		}
+	}
+	.section-sixth{
+		@include make-container(1440px);
+		.row{
+			@include make-row(1440px,0px,0px);
+			position: relative;
+			z-index: 1;
+			& > div{
+				width: 100%;
+				article{
+					position: absolute;
+					bottom: percentage(40 / 670);
+					left: percentage(180 / 1440);
+					width: percentage(1080 / 1440);
+					padding-left: percentage(100 / 1440);
+					padding-right: percentage(100 / 1440);
+					padding-bottom: percentage(40 / 1440);
+					background: rgba(255,255,255,.85);
+					h1{
+						padding-top: percentage(70 / 1080);
+						padding-bottom: percentage(30 / 1080);
+						margin-bottom: 0;
+
+					}
+					p{
+						margin-bottom: 0;
+					}
+					.price{
+						left:0;
+						top: -90px;
+					}
+				}
+			}
+		}
+	}
+
+	.section-seventh{
+		@include make-container(1440px);
+		.row{
+			@include make-row(1440px,100px,40px);
+
+			.title{
+				margin-top: percentage(50 / 1440);
+				@include make-grid(1440px,100px,40px);
+				padding-bottom: 0;
+				h1{
+					display: inline-block;
+					vertical-align: middle;
+					margin-bottom: 0;
+					margin-right: 50px;
+				}
+				h3{
+					margin-bottom: 0;
+					display: inline-block;
+					vertical-align: middle;
+
+				}
+				.fa{
+					vertical-align: middle;
+					margin-left: 15px;
+					font-size: 38px;
+				}
+			}
+
+			.col-sm-4{
+				@include make-grid(1440px,100px,40px);
+				.content-top{
+					margin-bottom: percentage(40 / 360);
+					position: relative;
+					.stripe{
+						position: absolute;
+						bottom: -0;
+					}
+
+				}
+				.content-bottom{
+					img{
+						width: percentage(75 / 360);
+						height: percentage(75 / 360);
+						vertical-align: top;
+						margin-right: percentage(25 / 360);
+
+
+						& + div{
+							margin-left: -5px;
+							display: inline-block;
+							vertical-align: top;
+							width: percentage(260 / 360);
+						}
+					}
+				}
+			}
+		}
+	}
+}

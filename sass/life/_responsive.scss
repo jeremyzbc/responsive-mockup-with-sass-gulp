@@ -1,0 +1,123 @@
+@media screen and (max-width: 1439px){
+	.life-page .section-third > .container-j > .row > aside .nav-tabs > li{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:1199px){
+	.life-page .section-first > .container-j > .row > div .gray-panel .info{
+		margin-left: 0;
+	}
+
+}
+
+
+@media screen and (max-width:991px){
+	.life-page .section-first > .container-j > .row > div .gray-panel .icon-img{
+		width: 40px;
+	}
+	.life-page .section-first > .container-j > .row > div .gray-panel .info .small{
+		font-size: 80%;
+		margin-bottom: 0;
+	}
+	.life-page .section-first > .container-j > .row > div .white-panel .rate{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.life-page .section-first > .container-j > .row > div .white-panel .story .pull-right{
+		margin-left: 0;
+		float: none !important;
+	}
+	.life-page .section-third > .container-j > .row > aside .nav-tabs > li a{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.life-page .section-third > .container-j > .row > aside .list-group .list-group-item .media .media-body .media-heading{
+		height: auto;
+	}
+}
+
+@media screen and (max-width:767px){
+	.life-page .section-first > .container-j > .row > aside .profile-img-wrap {
+	  width: percentage(230 / 640);
+	  display: inline-block;
+	  vertical-align: top;
+	  .profile-img{
+	  	border-width: 12px;
+
+	  }
+	  & ~ .white-panel{
+	  	display: inline-block;
+	  	margin-left: 13px;
+	  	padding-bottom: 15px;
+	  	h1{
+			margin-top: 15px;
+	  	}
+
+	  	.rate{
+	  		margin-right: 20px;
+	  		margin-top: 10px;
+	  	}
+
+	  	.score{
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 10px;
+			h2{
+				margin-bottom: 0;
+			}
+		}
+	  }
+	}
+
+	.life-page .section-second > .container-j .row:first-child ~ .row .col-first .text-right{
+		text-align: left;
+	}
+
+	.life-page .section-second > .container-j .row:first-child ~ .row .col-third{
+		display: block;
+		padding: 20px 0;
+	}
+
+	.life-page .section-second #fw-carousel .carousel-control{
+		display: none;
+	}
+	.life-page .section-third > .container-j{
+		padding-top: 19px;
+	}
+	.life-page .section-third > .container-j > .row > div .row{
+		margin: 0;
+		.col-sm-6{
+			padding-left:0;
+			padding-right: 0;
+		}
+	}
+
+	.life-page .visible-xs-block .btn{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		&:hover,
+		&:focus{
+			color: #fff;
+		}
+		.fa{
+			padding: 5px;
+			border-radius: 50%;
+			background: #fff;
+			line-height: 1;
+			width: 24px;
+			height: 24px;
+			margin-right: 10px;
+			font-size: inherit;
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+	.life-page .section-first > .container-j > .row > div .gray-panel{
+		[class^="col"]{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

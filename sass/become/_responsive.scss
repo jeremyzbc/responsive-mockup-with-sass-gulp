@@ -1,0 +1,18 @@
+@media screen and (max-width:767px){
+	.become-page .section-third .inner-section > .row:first-child{
+		margin-left: 0;
+	}
+	.become-page .section-second > .row:first-child ~ .row .col-sm-6 ~ .col-sm-6 .reason-right p{
+		width: 100%;
+	}
+	.become-page .section-first .row .masthead .content{
+		width: 100%;
+		margin-left: 0;
+
+		h1{
+			font-size: 18px;
+			padding-right:10px;
+			padding-bottom: 10px;
+		}
+	}
+}

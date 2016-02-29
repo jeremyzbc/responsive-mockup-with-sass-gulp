@@ -1,0 +1,84 @@
+@media screen and (max-width: 1199px){
+	.perfect-list-page .container-j .row .col-first .tile .tile-middle .price{
+
+		bottom: -10px;
+	}
+	.perfect-list-page .container-j .row .col-second .tile .tile-middle .price{
+
+		bottom: -10px;
+	}
+	.perfect-list-page .container-j .row .col-third .tile .tile-middle .price{
+
+		bottom: -10px;
+	}
+	.perfect-list-page .container-j .row .col-first .tile .tile-bottom{
+		padding-bottom: 3 * (500 - 2 *35) / 4 / (405 - 2 *35) * 75%;
+	}
+	.perfect-list-page .container-j .row .col-second .tile .tile-bottom{
+		padding-bottom: 75%;
+	}
+	.perfect-list-page .container-j .row .col-third .tile .tile-bottom{
+		padding-bottom: 3 * (500 - 2 *35) / 4 / (405 - 2 *35) * 75%;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.perfect-list-page .container-j .row .col-first .tile .tile-middle .price{
+
+		right: 0;
+	}
+	.perfect-list-page .container-j .row .col-second .tile .tile-middle .price{
+
+		right: 0;
+	}
+	.perfect-list-page .container-j .row .col-third .tile .tile-middle .price{
+
+		right: 0;
+	}
+	.perfect-list-page .container-j .row .col-first .tile .tile-bottom{
+		padding-bottom: 3 * (500 - 2 *35) / 4 / (405 - 2 *35) * 100%;
+	}
+	.perfect-list-page .container-j .row .col-second .tile .tile-bottom{
+		padding-bottom: 100%;
+	}
+	.perfect-list-page .container-j .row .col-third .tile .tile-bottom{
+		padding-bottom: 3 * (500 - 2 *35) / 4 / (405 - 2 *35) * 100%;
+	}
+	.perfect-list-page .container-j .row .tile .tile-bottom .x-small{
+		max-height: 100px;
+  		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.perfect-list-page{
+		margin-bottom: 0;
+	}
+	.perfect-list-page .container-j .row .col-first .tile .tile-middle .price{
+		right: 10px;
+		bottom: -42.5px;
+	}
+	.perfect-list-page .container-j .row .col-first .tile .tile-bottom{
+		height: auto;
+		padding-bottom: 0;
+		padding-bottom: 10px;
+	}
+	.perfect-list-page .container-j .row .col-second .tile .tile-middle .price{
+		right: 10px;
+		bottom: -42.5px;
+	}
+	.perfect-list-page .container-j .row .col-second .tile .tile-bottom{
+		height: auto;
+		padding-bottom: 0;
+		padding-bottom: 10px;
+	}
+	.perfect-list-page .container-j .row .col-third .tile .tile-middle .price{
+		right: 10px;
+		bottom: -42.5px;
+	}
+	.perfect-list-page .container-j .row .col-third .tile .tile-bottom{
+		height: auto;
+		padding-bottom: 0;
+		padding-bottom: 10px;
+	}
+}

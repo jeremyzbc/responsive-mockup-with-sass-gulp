@@ -1,0 +1,125 @@
+.contact-page{
+	& > .container-j{
+
+		& > .row{
+			@include make-row(1440px,0px,0px);
+			display: table;
+			.contact-form{
+				@include make-grid(1440px,0px,0px,567px);
+				background: #4ec1a0 url(../../images/contact-form.png) no-repeat right center;
+				display: table-cell;
+				vertical-align: top;
+				float: none;
+				form{
+					margin: percentage(170 / 567) percentage(125 / 567) 0 percentage(130 / 567);
+					legend{
+						border: 0;
+						margin-bottom: 35px;
+					}
+					p{
+						margin-bottom: 30px;
+					}
+					input,textarea{
+						border-color: #dadada;
+						border-radius: 0;
+						background: transparent;
+
+					}
+					input,.btn{
+						height: 45px;
+					}
+					textarea{
+						height: 200px;
+					}
+					.btn{
+						border-radius: 0;
+						color: $text-gray;
+					}
+					::-webkit-input-placeholder{
+						color: #dadada;
+					}
+
+					::-moz-placeholder{
+						color: #dadada;
+					}
+					:-ms-input-placeholder{
+						color: #dadada;
+					}
+				}
+			}
+			.contact-info{
+				@include make-grid(1440px,0px,0px,873px);
+				display: table-cell;
+				vertical-align: top;
+				float: none;
+
+				.row{
+					@include make-row(873px,0px,15px);
+					.contact-info-left{
+						@include make-grid(873px,0px,15px,230px);
+						h1{
+							margin-bottom: 5px;
+						}
+						h6,p{
+							margin-bottom: 0;
+						}
+						padding-left: percentage(35 / 873);
+					}
+					.contact-info-middle{
+						@include make-grid(873px,0px,15px,340px);
+
+						.contact-info-icon{
+							width: 49px;
+							display: inline-block;
+							vertical-align: top;
+							margin-right: 10px;
+						}
+						.contact-info-text{
+							display: inline-block;
+							vertical-align: top;
+							width: calc(100% - 64px);
+							p{
+								margin-bottom: 0;
+							}
+						}
+					}
+					.contact-info-right{
+						@include make-grid(873px,0px,15px,283px);
+
+						.contact-info-icon{
+							width: 49px;
+							display: inline-block;
+							vertical-align: middle;
+							margin-right: 10px;
+						}
+						.contact-info-text{
+							display: inline-block;
+							vertical-align: middle;
+							width: calc(100% - 64px);
+							p{
+								margin-bottom: 0;
+								word-wrap: break-word;
+							}
+						}
+					}
+				}
+
+			}
+
+			.contact-sydney{
+				background: url(../../images/contact-sydney.jpg) no-repeat left center;
+				box-shadow: inset 2px 0 100px rgba(0,0,0,.9);
+				padding-top: percentage(140 / 873);
+				padding-bottom: percentage(60 / 873);
+
+			}
+			.contact-beijing{
+				background: url(../../images/contact-beijing.png) no-repeat left center;
+				box-shadow: inset 2px 0 100px rgba(0,0,0,.9);
+				padding-top: percentage(70 / 873);
+				padding-bottom: percentage(60 / 873);
+			}
+		}
+	}
+
+}

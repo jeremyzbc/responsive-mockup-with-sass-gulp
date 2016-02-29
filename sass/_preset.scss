@@ -1,0 +1,247 @@
+html{
+	overflow-x: hidden;
+}
+
+body{
+	font-size: $text-size;
+	color: $text-gray;
+	overflow-x: hidden;
+}
+
+
+
+.hero{
+	font-size: 48px;
+}
+
+h1, .h1{
+	font-size: $h1-size;
+	margin-top: 0;
+}
+
+h2, .h2{
+	font-size: $h2-size;
+	margin-top: 0;
+}
+
+h3, .h3{
+	font-size: $h3-size;
+	margin-top: 0;
+}
+
+h4, .h4{
+	font-size: $h4-size;
+	margin-top: 0;
+}
+
+h5, .h5{
+	font-size: $h5-size;
+	margin-top: 0;
+}
+
+h6, .h6{
+	font-size: $h6-size;
+	margin-top: 0;
+}
+
+.normal{
+	font-size: $text-size;
+}
+
+a{
+	font-size: inherit;
+	color: inherit;
+
+	&:hover,
+	&:focus{
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+p{
+	line-height: $text-size * 1.5;
+}
+
+small, .small{
+	font-size: $small-size;
+}
+
+.x-small{
+	font-size: $x-small-size;
+}
+
+.btn{
+	color: $text-gray;
+
+	&:hover,
+	&:focus{
+		color: inherit;
+	}
+}
+
+@media screen and (max-width:1199px) and (min-width: 992px){
+	body{
+		font-size: $text-size - 1px;
+	}
+
+	h1, .h1{
+		font-size: $h1-size - 2px;
+	}
+
+	h2, .h2{
+		font-size: $h2-size - 2px;
+	}
+
+	h3, .h3{
+		font-size: $h3-size - 2px;
+	}
+
+	h4, .h4{
+		font-size: $h4-size - 2px;
+	}
+
+	h5, .h5{
+		font-size: $h5-size - 2px;
+	}
+
+	h6, .h6{
+		font-size: $h6-size - 2px;
+	}
+
+	.normal{
+		font-size: $text-size - 1px;
+	}
+
+	a{
+		font-size: $text-size - 1px;
+	}
+
+	p{
+		line-height: ($text-size - 1px) * 1.5;
+	}
+
+	small, .small{
+		font-size: $small-size - 1px;
+	}
+
+	.x-small{
+		font-size: $x-small-size - 1px;
+	}
+}
+
+@media screen and (max-width:991px){
+	body{
+		font-size: $text-size - 3px;
+	}
+
+	h1, .h1{
+		font-size: $h1-size - 4px;
+	}
+
+	h2, .h2{
+		font-size: $h2-size - 4px;
+	}
+
+	h3, .h3{
+		font-size: $h3-size - 4px;
+	}
+
+	h4, .h4{
+		font-size: $h4-size - 4px;
+	}
+
+	h5, .h5{
+		font-size: $h5-size - 4px;
+	}
+
+	h6, .h6{
+		font-size: $h6-size - 4px;
+	}
+
+	.normal{
+		font-size: $text-size - 3px;
+	}
+
+	a{
+		font-size: $text-size - 3px;
+	}
+
+	p{
+		line-height: ($text-size - 2px) * 1.5;
+	}
+
+	small, .small{
+		font-size: $small-size - 3px;
+	}
+
+	.x-small{
+		font-size: $x-small-size - 3px;
+	}
+}
+
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+
+.text-dark{
+	color: $text-dark;
+}
+
+.text-gray{
+	color: $text-gray;
+}
+
+.text-light{
+	color: $text-light;
+}
+
+.text-white{
+	color: $text-white;
+}
+
+.text-green{
+	color: $brand-green;
+}
+
+.text-blue{
+	color: $brand-blue;
+}
+
+.text-gold{
+	color: $brand-gold;
+}
+
+.text-gold-dark{
+	color: darken($brand-gold, 10%);
+}
+
+.text-yellow{
+	color: $brand-yellow;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.bg-green{
+	background: $brand-green;
+	&.btn{
+		@include button-variant(#fff, $brand-green, $brand-green)
+	}
+}
+
+.bg-blue{
+	background: $brand-blue;
+	&.btn{
+		@include button-variant(#fff, $brand-blue, $brand-blue)
+	}
+}
+
+.bg-yellow{
+	background: $brand-yellow;
+	&.btn{
+		@include button-variant(#fff, $brand-yellow, $brand-yellow)
+	}
+}

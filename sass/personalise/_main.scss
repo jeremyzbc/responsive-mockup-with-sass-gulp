@@ -1,0 +1,168 @@
+.personalise-bg{
+	background: url(../../images/personalise-bg.jpg) no-repeat center top fixed;
+}
+.personalise-page > .container-j{
+	background: rgba(0, 0, 0, .3);
+	height: 100vh;
+
+	& > .section-first{
+		@include make-container(820px);
+		margin-bottom: 50px;
+		.hero{
+			margin-top: 80px;
+			margin-bottom: 50px;
+		}
+
+		.title{
+			width: 75px;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 25px;
+			h6{
+				font-weight: bold;
+				margin-top: 5px;
+				font-size:18px;
+			}
+		}
+
+		.options{
+			width: calc(100% - 84px);
+			display: inline-block;
+			vertical-align: top;
+			margin-right: -21px;
+			.btn{
+				margin-right: 16px;
+				margin-bottom: 20px;
+				border-radius: 10px;
+				padding: 0px 32px;
+				height: 42px;
+				line-height: 40px;
+				&.active{
+					background: $brand-green;
+					border-color: $brand-green;
+					color: #fff;
+					@extend .fa-check;
+					&:before{
+						color: $brand-green;
+						font-family: FontAwesome;
+						background: #fff;
+						border-radius: 50%;
+						margin-right: 10px;
+						padding: 4px;
+					}
+				}
+			}
+		}
+	}
+	& > .section-second{
+		@include make-container(820px);
+		& > .row{
+			@include make-row(820px,0px,10px);
+
+			& > .col-first{
+				@include make-grid(820px,0px,10px,510px);
+				.content{
+					background: rgba(0,0,0,.4);
+					padding:20px 0 40px;
+					border-radius: 15px;
+					height: 360px;
+
+					.row{
+						@include make-row(510px,30px,10px);
+						&:first-child > div{
+							padding-top: 0;
+							&:first-child{
+								padding-bottom: 0;
+								width: 100%;
+							}
+						}
+						& > div{
+							@include make-grid(510px,30px,10px);
+							h6{
+								margin-top: 10px;
+								font-weight: bold;
+								font-size: 18px;
+							}
+						}
+						select{
+							width: 100%;
+							height: 40px;
+							margin-bottom: 0;
+							color: $text-dark;
+						}
+						.input-group{
+							width: 100%;
+						}
+						.form-control{
+							@extend .h6;
+
+							display: inline-block;
+							border: 1px solid #dadada;
+							border-right: 0;
+							height: 40px;
+							margin-bottom: 0;
+							border-radius: 0;
+							line-height: 40px;
+							color: $text-dark;
+						}
+						.input-group-addon{
+							padding: 0;
+							border:0;
+							background: #fff;
+							position: absolute;
+							right: 37px;
+							z-index: 3;
+							line-height: 38px;
+
+						}
+					}
+				}
+			}
+			& > .col-second{
+				@include make-grid(820px,0px,10px,330px);
+				.content{
+					background: rgba(0,0,0,.4);
+					padding:37px 0 40px;
+					border-radius: 15px;
+					height: 360px;
+					.row {
+						@include make-row(330px,30px,10px);
+					}
+					h6{
+						font-weight: bold;
+						font-size: 18px;
+						margin-top: 10px;
+					}
+					.input-group{
+						width: 100%;
+					}
+					.form-control{
+						@extend .h6;
+
+						display: inline-block;
+						border: 1px solid #dadada;
+						border-right: 0;
+						height: 40px;
+						margin-bottom: 0;
+						border-radius: 0;
+						line-height: 40px;
+						color: $text-dark;
+					}
+
+					.submit .btn{
+						@extend .fa-check;
+						font-size: 18px;
+						border-radius: 0;
+						margin-top: 20px;
+						&:before{
+							color: #fff;
+							font-family: FontAwesome;
+							margin-right: 10px;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

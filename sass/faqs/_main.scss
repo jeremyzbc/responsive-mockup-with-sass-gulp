@@ -1,0 +1,86 @@
+.faqs-bg{
+	background: url(../../images/faqs-bg.jpg) no-repeat center top fixed;
+}
+.faqs-page{
+	.hero{
+		margin-top: 180px;
+		margin-bottom: 80px;
+	}
+	.container-j{
+
+		.row{
+			@include make-row(1440px,0px,0px);
+
+			.nav-tabs{
+
+				padding-left: percentage(80 / 1440);
+				border: 0;
+				li{
+					a{
+						background: transparent;
+						border: 0;
+					}
+					&.active a{
+						color: $text-gray;
+						position: relative;
+						&:after{
+						content: '';
+						width: 0;
+						height: 0;
+						border: 10px solid transparent;
+						border-top-color: $brand-green;
+						position: absolute;
+	  					left: calc(50% - 10px);
+	  					bottom: -10px;
+					}
+					}
+				}
+			}
+			.tab-content{
+				margin-left: percentage(80 / 1440);
+				background: rgba(222,222,222,.85);
+				.questions{
+					@include make-grid(1360px,0px,0px,487px);
+					padding-top: percentage(30 / 1360);
+					padding-bottom: percentage(30 / 1360);
+					background: rgba(98,191,160,.85);
+					display: table-cell;
+					vertical-align: top;
+					float: none;
+					.question{
+						&.active{
+							background: #fff;
+							a{
+								color: $text-dark;
+							}
+						}
+
+
+					}
+					a{
+						padding-left: percentage(40 / 487);
+						padding-bottom: 5px;
+						padding-top:5px;
+						padding-right: percentage(10 / 487);
+						display: block;
+					}
+					p{
+						margin-bottom: 0;
+					}
+				}
+				.answers{
+					@include make-grid(1360px,0px,0px,873px);
+
+					padding-left: percentage(40 / 1360);
+					padding-top: percentage(30 / 1360);
+					padding-right: percentage(30 / 1360);
+					padding-bottom: percentage(40 / 1360);
+					display: table-cell;
+					vertical-align: top;
+					float: none;
+				}
+			}
+		}
+	}
+}
+

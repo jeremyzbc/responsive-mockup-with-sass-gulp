@@ -1,0 +1,248 @@
+.perfect-list-bg{
+	background: url(../../images/perfect-day-bg.png) no-repeat center top fixed;
+}
+
+.perfect-list-page{
+	margin-bottom: 80px;
+    .container-j{
+		background: rgba(0, 0, 0, .3);
+		padding-bottom: 50px;
+		   .row{
+			@include make-row(1440px,100px,35px);
+
+			.col-first{
+				@include make-grid(1440px,100px,35px,405px);
+				.tile{
+
+					&:first-child{
+						padding-top: 0;
+					}
+					.tile-top{
+						height: 30px;
+						line-height: 30px;
+						text-align: right;
+						color: #fff;
+					}
+					.tile-middle{
+						position: relative;
+						.rns, .price{
+							position:absolute;
+							z-index: 1;
+							bottom: 10px;
+						}
+						.rns{
+							left: 10px;
+							.score{
+								display: inline-block;
+  								vertical-align: bottom;
+  								h2{
+  									margin: 0 0 0 15px;
+  								}
+							}
+
+						}
+						.price{
+							// style in common scss
+							bottom: -40px;
+						}
+					}
+					.tile-bottom{
+						height:0;
+						color: #fff;
+						padding: 0px 10px;
+						padding-bottom: 3 * (500 - 2 *35) / 4 / (405 - 2 *35) * 45%;
+						h4{
+							padding-top: 20px;
+						}
+						.x-small{
+							display: inline-block;
+						}
+					}
+				}
+			}
+			.col-second{
+				@include make-grid(1440px,100px,35px,500px);
+				.tile{
+					padding-top:15px;
+					&:first-child{
+						padding-top: 0;
+					}
+					.tile-top{
+						height: 30px;
+						line-height: 30px;
+						text-align: right;
+						color: #fff;
+					}
+					.tile-middle{
+						position: relative;
+						.rns, .price{
+							position:absolute;
+							z-index: 1;
+							bottom: 10px;
+						}
+						.rns{
+							left: 10px;
+							.score{
+								display: inline-block;
+  								vertical-align: bottom;
+  								h2{
+  									margin: 0 0 0 15px;
+  								}
+							}
+
+						}
+						.price{
+							// style in common scss
+							bottom: -40px;
+						}
+					}
+					.tile-bottom{
+						height:0;
+						color: #fff;
+						padding: 0px 10px;
+						padding-bottom: 45%;
+						h4{
+							padding-top: 20px;
+						}
+						.x-small{
+							display: inline-block;
+						}
+					}
+				}
+			}
+			.col-third{
+				@include make-grid(1440px,100px,35px,405px);
+				.tile{
+
+					&:first-child{
+						padding-top: 0;
+					}
+					.tile-top{
+						height: 30px;
+						line-height: 30px;
+						text-align: right;
+						color: #fff;
+					}
+					.tile-middle{
+						position: relative;
+						.rns, .price{
+							position:absolute;
+							z-index: 1;
+							bottom: 10px;
+						}
+						.rns{
+							left: 10px;
+							.score{
+								display: inline-block;
+  								vertical-align: bottom;
+  								h2{
+  									margin: 0 0 0 15px;
+  								}
+							}
+
+						}
+						.price{
+							bottom: -40px;
+							// style in common scss
+
+						}
+					}
+					.tile-bottom{
+						height:0;
+						color: #fff;
+						padding: 0px 10px;
+						padding-bottom: 3 * (500 - 2 *35) / 4 / (405 - 2 *35) * 45%;
+						h4{
+							padding-top: 20px;
+						}
+						.x-small{
+							display: inline-block;
+						}
+					}
+				}
+			}
+			[class^="col"]{
+				padding-bottom: 0;
+
+			}
+
+			&:not(:first-child){
+				[class^="col"]{
+					padding-top: 0;
+
+				}
+			}
+		}
+	}
+	footer{
+		position: fixed;
+		bottom: 0;
+		z-index: 2;
+		width: 100vw;
+		max-width: 1440px;
+
+		.row{
+
+			&:first-child{
+				@include make-row(1440px,100px,0px);
+				& > div{
+					background: rgba(84,185,155,.8);
+					height: 50px;
+					position: relative;
+				}
+
+				.num{
+					h4{
+						text-align: center;
+						line-height: 50px;
+					}
+				}
+				.total{
+					position: absolute;
+					right: 10px;
+					z-index: 1;
+					top: 0;
+				}
+				h4{
+					line-height: 50px;
+				}
+			}
+
+			& + .row{
+				@include make-row(1440px,0px,0px);
+
+				& > div{
+					height: 80px;
+					background: rgba(29,29,29,.8);
+				}
+
+				.perfect-day{
+					position: absolute;
+					left: percentage(100 / 1440);
+					h1{
+						line-height: 80px;
+					}
+				}
+				.search{
+					position: absolute;
+	  				right: percentage(100 / 1440);
+					line-height: 80px;
+					select{
+					// 	@extend .h6;
+						color: $brand-orange;
+					// 	padding: 9px 5px 8px 5px;
+					// 	display: inline-block;
+					// 	border: 1px solid #dadada;
+						width: 225px;
+						margin-left: 20px;
+					// 	background: #fff url(../../images/arrow.png) no-repeat 200px center;
+					// 	-webkit-appearance: none;
+					// 	-moz-appearance: none;
+					}
+				}
+			}
+		}
+	}
+
+
+}

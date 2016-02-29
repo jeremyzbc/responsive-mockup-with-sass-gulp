@@ -1,0 +1,28 @@
+@media screen and (max-width:767px){
+	.contact-page > .container-j > .row{
+		display: block;
+	}
+	.contact-page > .container-j > .row .contact-form{
+		display: block;
+		form{
+			margin: 0;
+			padding: 20px;
+		}
+
+	}
+	.contact-page > .container-j > .row .contact-info{
+		display: block;
+
+	}
+	.contact-page > .container-j > .row .contact-info .row{
+		margin: 0;
+	}
+	.contact-page > .container-j > .row .contact-sydney{
+		background-position: right bottom;
+		background-color: #285B90
+	}
+	.contact-page > .container-j > .row .contact-beijing{
+		background-position: center bottom;
+		background-color: #627BAF;
+	}
+}

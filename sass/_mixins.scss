@@ -1,0 +1,28 @@
+@mixin make-container($container-width) {
+  width: $container-width;
+  max-width: 100%;
+}
+@mixin make-row($container-width, $container-gutter-width, $grid-gutter-width){
+  margin-left: - percentage($grid-gutter-width / $container-width);
+  margin-right: - percentage($grid-gutter-width / $container-width);
+  padding-left: percentage($container-gutter-width / $container-width);
+  padding-right: percentage($container-gutter-width / $container-width);
+  clear: both;
+}
+@mixin make-responsive-row($container-width, $row-width){
+  width: percentage($row-width / $container-width);
+  margin: 0 auto;
+}
+@mixin make-grid($container-width, $container-gutter-width, $grid-gutter-width, $grid-width: null){
+  float: left;
+  padding: percentage( $grid-gutter-width / ($container-width + 2*($grid-gutter-width - $container-gutter-width)) );
+  box-sizing: border-box;
+  @if $grid-width != null{
+  	@if unit($grid-width) == '%'{
+	  	width: $grid-width;
+	  }
+	  @else if unit($grid-width) == 'px'{
+	  	width: percentage( $grid-width/($container-width + 2*($grid-gutter-width - $container-gutter-width)) );
+	  }
+  }
+}

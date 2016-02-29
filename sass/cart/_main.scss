@@ -1,0 +1,267 @@
+.cart-bg{
+	background: url(../../images/cart-bg.jpg) no-repeat center top fixed;
+}
+.cart-page{
+	.container-j{
+		margin-top: percentage(230 / 1440);
+		margin-bottom: percentage(100 / 1440);
+		.row{
+			@include make-row(1440px,100px,0px);
+
+			.col-xs-12{
+				@include make-grid(1440px,100px,0px);
+				position: static;
+				.calendar-top,.calendar-bottom{
+					height: 13px;
+				}
+				.calendar-top{
+					background: url(../../images/calendar-top-bg.png) repeat-x left top;
+				}
+				.calendar-bottom{
+					background: url(../../images/calendar-bottom-bg.png) repeat-x left bottom;
+				}
+				.calendar{
+					padding: 100px 42px;
+					background: #fff;
+					& >section> *{
+						background:  url(../../images/calendar-stripe.png) repeat;
+					}
+					& >section:first-child .calendar-date{
+						border-top: 5px solid #bce6d9;
+						height: 2 * $calendar-row-height + 5px;
+					}
+					.calendar-date{
+						height: 2 * $calendar-row-height;
+
+						.calendar-date-picker{
+							width: 205px;
+							background: $brand-green;
+							height: $calendar-row-height;
+							h4{
+								line-height: $calendar-row-height;
+								padding-left: 15px;
+								cursor: pointer;
+								span{
+									padding: 0 7px;
+									position: relative;
+									input{
+										@include opacity(0);
+										position: absolute;
+										left:0;
+										z-index: 1;
+									}
+								}
+							}
+						}
+					}
+
+					.calendar-event{
+						height: 5 * $calendar-row-height;
+						cursor: pointer;
+						&.dragged{
+							@include opacity(.3);
+						}
+						select{
+							height: $calendar-row-height + 1px;
+							margin-top: -1px
+						}
+						h4,p,{
+							line-height: $calendar-row-height;
+							margin-bottom: 0;
+						}
+
+						.event-left{
+							float: left;
+							.event-icon{
+								float: left;
+								width: 60px;
+								text-align: center;
+								[class*="square-o"]{
+									height: 42px;
+									margin-top: 0;
+									margin-right: 5px;
+								}
+								.fa{
+									line-height: 42px;
+									vertical-align: top;
+								}
+							}
+							.event-time{
+								float: left;
+								width: 165px;
+							}
+							.event-thumbnail{
+								float: left;
+								width: 200px;
+								a{
+									height: 35px;
+									width: 50%;
+									float: left;
+									line-height: 35px;
+									padding: 0 15px;
+									&.edit{
+										background: $brand-green;
+										img{
+											margin-right: 10px;
+											width: 25px;
+											height: 25px;
+										}
+									}
+									&.delete{
+										background: #d77363;
+										img{
+											margin-right: 10px;
+											width: 25px;
+											height: 25px;
+										}
+									}
+								}
+							}
+						}
+
+						.event-right{
+							float: left;
+							width: calc(100% - 425px);
+							.event-desc{
+								float: left;
+								width: percentage(240 / 731);
+								padding-left: percentage(30 / 731);
+								padding-right: percentage(30 / 731);
+							}
+							.event-people{
+								float: left;
+								width: percentage(295 / 731);
+								.event-adult{
+									float: left;
+									width: percentage(150 / 295);
+									select{
+										width: 75px;
+										margin-bottom: 0;
+									}
+								}
+								.event-children{
+									float: left;
+									width: percentage(145 / 295);
+									select{
+										width: 75px;
+										margin-bottom: 0;
+									}
+								}
+							}
+
+							.event-price{
+								float: left;
+								width: percentage(195 / 731);
+
+							}
+						}
+
+					}
+
+
+				}
+				.hand{
+					position: fixed;
+					left: calc(50% + 537px);
+					bottom: -80px
+				}
+			}
+		}
+
+		footer{
+			position: fixed;
+			bottom: 0;
+			z-index: 2;
+			width: 100vw;
+			max-width: 1440px;
+
+			.row{
+				@include make-row(1440px,0px,0px);
+
+				& > div{
+					height: 80px;
+					background: rgba(29,29,29,.8);
+				}
+
+				.shopping-cart-left{
+					position: absolute;
+					left: percentage(100 / 1440);
+					h1{
+						line-height: 80px;
+					}
+				}
+				.shopping-cart-right{
+					position: absolute;
+	  				right: percentage(150 / 1440);
+	  				& > *{
+	  					line-height: 80px;
+	  					margin-bottom: 0;
+	  				}
+	  				.voucher{
+						display: inline-block;
+						vertical-align: top;
+						.form-group{
+							margin-bottom: 0;
+						}
+						label{
+							margin-bottom: 0;
+							margin-right: 10px;
+							display: inline-block;
+							vertical-align: middle;
+						}
+						.form-control{
+							width: auto;
+							display: inline-block;
+							vertical-align: middle;
+							border-radius: 0;
+							height: 40px;
+						}
+					}
+
+					.total{
+						display: inline-block;
+						vertical-align: top;
+						margin-left: 20px;
+						margin-right: 20px;
+						h4{
+							margin-bottom: 0;
+							line-height: 80px;
+							& > *{
+								line-height: 80px;
+								display: inline-block;
+								vertical-align: middle;
+								margin-bottom: 0;
+							}
+						}
+						.h6,.x-small{
+							color: #fff;
+
+						}
+						.h6{
+							margin-right: 10px;
+						}
+						.text-green{
+							margin-right: 1px;
+							margin-left: 1px;
+						}
+					}
+					.submit{
+						display: inline-block;
+						vertical-align: top;
+						.btn{
+							color: #fff;
+							border-radius: 0;
+							height: 40px;
+							line-height: 40px;
+							padding: 0 20px;
+						}
+					}
+				}
+
+			}
+
+		}
+	}
+
+}
+

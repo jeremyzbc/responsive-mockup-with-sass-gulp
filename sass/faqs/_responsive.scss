@@ -1,0 +1,50 @@
+@media screen and (max-width:767px){
+	.faqs-page .hero{
+		margin: 40px 0;
+		font-size: 36px;
+	}
+	.faqs-page .container-j .row .nav-tabs{
+		padding-left: 0;
+		background: #0d0906;;
+		li{
+			width: 33.3333%;
+			text-align: center;
+
+			a{
+				color: $text-light;
+				font-size: 18px;
+			}
+
+		}
+	}
+	.faqs-page .container-j .row .tab-content{
+		margin-left: 0;
+	}
+	.faqs-page .container-j .row .tab-content .questions{
+		display: block;
+		padding-bottom: 0;
+	}
+	.faqs-page .container-j .row .tab-content .answers{
+		display: block;
+
+	}
+	.faqs-page .container-j .row .tab-content .questions .question.active{
+		background: transparent;
+		a{
+			color: $text-dark;
+			font-weight: bold;
+			background: rgba(222,222,222,.85);
+		}
+	}
+	.answer{
+		background: rgba(222,222,222,.85);
+		padding:10px;
+		color : $text-dark;
+	}
+	.faqs-page .container-j .row .tab-content .questions a{
+		padding:10px;
+	}
+	.faqs-page .container-j .row .tab-content .answers{
+		padding: 0;
+	}
+}

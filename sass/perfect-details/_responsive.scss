@@ -1,0 +1,215 @@
+@media screen and (max-width: 1199px){
+	.perfect-details-page .section-third > .row .article-top{
+		padding-bottom: percentage(250 / 1190);
+
+	}
+}
+
+@media screen and (max-width: 991px){
+	.perfect-details-page .section-sixth .row > div article{
+		padding-right: percentage(40 / 1440);
+		padding-bottom: percentage(20 / 1440);
+		bottom: percentage(20 / 670);
+		h1{
+			padding-bottom: percentage(20 / 1080);
+		}
+	}
+}
+
+@media screen and (max-width: 767px){
+	.perfect-details-page .section-first .text-overlay{
+		text-align: left;
+		transform: translateY(0);
+		left:10px;
+		top: 24%;
+		.hero{
+			font-size: 22px;
+			margin-bottom: 10px;
+
+		}
+		img{
+			width: 35px;
+			height: auto;
+			margin-right: 10px;
+			& + div{
+				width: calc(100% - 50px);
+				vertical-align: top;
+				display: inline-block;
+				h4{
+					font-size: 15px;
+				}
+			}
+		}
+
+	}
+
+	.perfect-details-page .section-second > div{
+		.schedule{
+			height: 100px;
+			li{
+				padding-bottom: 15px;
+				padding-top: 15px;
+
+			}
+
+		}
+		.carousel-control{
+			.fa{
+				line-height: 100px;
+				font-size: 48px;
+			}
+		}
+	}
+	.perfect-details-page .section-third{
+
+		& > .row{
+			@include make-responsive-row(640px, 600px);
+			& > *{
+				width: 100%;
+				position: relative;
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+
+				.price{
+					bottom: 10px;
+					top: auto;
+					background: rgba(255,225,61,.7);
+				}
+
+				.col-xs-6{
+					padding-top: 20px;
+					width: 50%;
+					&:first-child{
+						padding-left: 0;
+						padding-right: 10px;
+
+						& + .col-xs-6{
+							padding-right: 0;
+							padding-left: 10px;
+						}
+					}
+				}
+			}
+			article{
+				height: auto;
+			}
+			.article-top{
+				padding-bottom: 0;
+				h1{
+					padding-top: percentage(90 / 600);
+					padding-bottom: percentage(70 / 600);
+				}
+
+			}
+			.article-bottom{
+				padding-bottom: 0;
+				.content{
+					padding-top: percentage(50 / 600);
+					padding-left: 0;
+					padding-right: 0;
+					padding-bottom: percentage(60 / 600)
+				}
+			}
+
+		}
+	}
+	.perfect-details-page .section-fourth{
+		.row{
+			& > div{
+				width: 100%;
+				display: block;
+				.price{
+					background: rgba(255,225,61,.7);
+				}
+			}
+			& > article{
+				width: 100%;
+				display: block;
+				padding-top: percentage(130 / 640);
+				padding-bottom: percentage(130 / 640);
+				padding-left: percentage(50 / 640);
+				padding-right: percentage(50 / 640);
+				h1{
+					padding-bottom: percentage(30 / 640);
+				}
+
+			}
+		}
+	}
+	.perfect-details-page .section-fifth{
+		.row{
+			@include make-responsive-row(640px, 560px);
+			padding-top: percentage(200 / 640);
+			padding-bottom: percentage(50 / 640);
+			& > div{
+				width: 100%;
+				display: block;
+
+				.price{
+					background: rgba(255,225,61,.7);
+				}
+			}
+			& > article{
+				width: 100%;
+				display: block;
+				padding-left: percentage(40 / 560);
+				padding-right: percentage(40 / 560);
+				padding-bottom: percentage(70 / 560);
+
+				h1{
+					padding-top: percentage(40 / 560);
+					padding-bottom: percentage(30 / 560);
+					text-align: left;
+				}
+			}
+		}
+	}
+	.perfect-details-page .section-sixth{
+		background: url(../../images/perfect-details-mobile-bg.png) no-repeat center top;
+		.row{
+			@include make-responsive-row(640px, 560px);
+			& > div{
+				padding-top: percentage(250 / 640);
+				padding-bottom: percentage(70 / 640);
+
+				article{
+					position: static;
+					width: 100%;
+					padding-left: percentage(70 / 560);
+					padding-right: percentage(70 / 560);
+					padding-bottom: percentage(70 / 560);
+
+					h1{
+						padding-top: percentage(100 / 560);
+						padding-bottom: percentage(30 / 560);
+					}
+					.price{
+						background: rgba(255,225,61,.7);
+						top: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.perfect-details-page .section-seventh{
+		.row{
+			@include make-row(640px, 40px, 0px);
+
+			.title{
+				margin-top: percentage(50 / 1440);
+				margin-bottom: percentage(50 / 1440);
+				@include make-grid(560px,0px,0px);
+			}
+
+			.col-sm-4{
+				@include make-grid(560px,0px,0px);
+
+				.content-bottom{
+					margin-bottom: percentage(80 / 560);
+				}
+			}
+		}
+	}
+}

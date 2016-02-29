@@ -1,0 +1,111 @@
+@media screen and (max-width: 767px){
+	.personalise-page > .container-j > .section-first{
+		margin-bottom: 0;
+		overflow: hidden;
+	}
+	.personalise-page > .container-j > .section-first .title{
+		display: block;
+		width: 100%;
+		h6{
+			text-align: center;
+			font-weight: normal;
+			margin: 25px;
+		}
+	}
+	.personalise-page > .container-j > .section-first .city.options{
+		width: 90%;
+	}
+	.personalise-page > .container-j > .section-first .options{
+		display: block;
+		width: 75%;
+		margin: 20px auto;
+		text-align: center;
+		.btn{
+			margin-right: 9px;
+			padding: 0px 12px;
+			height: 36px;
+			line-height: 34px;
+			border-radius: 7px;
+		}
+	}
+	.personalise-page .next{
+		width: 88%;
+		margin: 0 auto;
+		.btn{
+			border-radius: 0;
+		}
+		span{
+			line-height: 40px;
+			height: 40px;
+			padding: 0;
+			display: inline-block;
+  			vertical-align: top;
+
+			.fa{
+				font-size:22px;
+				margin-left: 10px;
+			}
+		}
+	}
+	.personalise-page > .container-j > .section-second > .row > .col-first .content{
+		height: auto;
+	}
+	.personalise-page > .container-j > .section-second > .row > .col-second .content{
+		height: auto;
+	}
+
+	.personalise-page > .container-j > .section-first .hero{
+		font-size: 24px;
+		margin-top: 50px;
+		margin-bottom: 35px;
+	}
+
+	.personalise-page .nav{
+		@include make-row(640px, 50px, 30px);
+		background: #0d0906;
+
+		li{
+			@include make-grid(640px, 50px, 30px);
+			margin-bottom: 0;
+			text-align: center;
+			cursor: pointer;
+			&.active{
+				color: $text-light;
+				position: relative;
+				&:after{
+					content: '';
+					width: 0;
+					height: 0;
+					border: 6px solid transparent;
+					border-top-color: $brand-green;
+					position: absolute;
+  					left: calc(50% - 6px);
+  					bottom: 0px;
+				}
+			}
+		}
+	}
+
+	.personalise-page > .container-j > .section-first .title h6{
+		position: relative;
+		.gray-line{
+			background: rgba(246,246,246,.3);
+			height: 1px;
+			width: 50px;
+			position: absolute;
+			top: 9px;
+			&:first-child{
+				left: calc(50% - 100px);
+			}
+			& ~ .gray-line{
+				right: calc(50% - 100px);
+			}
+		}
+	}
+	.personalise-page .gray-line{
+		background: #f6f6f6;
+		height: 1px;
+		width: 50px;
+		position: relative;
+	}
+}
